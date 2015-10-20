@@ -29,8 +29,8 @@ class Game
     if player == correct_player
       return true
     else
-      return false
       puts "It is not your turn"
+      return false
     end
   end
 
