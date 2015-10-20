@@ -16,18 +16,8 @@ class Game
     check_range(square) && check_turn(currentplayer, lastplayer) && check_square(square)
   end
 
-  # def check_for_input(square)
-    
-  #   if square == ""
-  #     puts "Please enter a number"
-  #     false
-  #   else
-  #     true
-  #   end
-  # end
-
   def check_range(square)
-    if square <= 8
+    if square <= 8 && square >= 0
       return true
     else
       puts "Numbers is not in correct range"
@@ -89,8 +79,6 @@ class Game
 
   private
   def winning_game?
-    # is there a winner
-
   end
 
   def drawn_game?

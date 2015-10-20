@@ -53,6 +53,10 @@ g.player1 = gets.chomp
 puts "What is player 2's name? "
 g.player2 = gets.chomp
 
+if g.player1 == g.player2
+  g.player2 += "2"
+end
+
 until g.finished?
   puts `clear`
   puts print_board(g)
